@@ -1,0 +1,93 @@
+nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    padding: 5px 20px;
+}
+
+/* Search Bar */
+nav form{
+    display: flex;
+    min-width: 350px;
+    width: 45%;
+    height: 38px;
+}
+nav form input{
+    border-top-left-radius: var(--bradius);
+    border-bottom-left-radius: var(--bradius);
+    font-size: 15px;
+    width: calc(100% - 45px);
+    padding: 0 12px;
+}
+nav form button{
+    background-color: var(--mainCol);
+    border-top-right-radius: var(--bradius);
+    border-bottom-right-radius: var(--bradius);
+    cursor: pointer;
+    padding: 4px 2px 0 0;
+    width: 45px;
+}
+nav form button:hover{
+    background-color: rgb(247, 176, 43);
+}
+nav form button:active{
+    opacity: 0.9;
+}
+
+
+/* Options */
+#nav_options{
+    align-items: center;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    min-width: 250px;
+    width: 18%;
+    user-select: none;
+}
+
+#nav_options div{
+    cursor: pointer;
+    transition: transform 0.25s ;
+}
+
+#nav_options div:hover{
+    transform: translateY(-2px);
+}
+
+.nav_options1{
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.nav_options2{
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+/* Shopping Cart */
+#header_cart{
+    position: relative;
+    padding-right: 32px;
+}
+
+#header_cart p{
+    color: orange;
+    padding-left: 5px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: -15px;
+}
+
+#header_cart img{
+    height: 28px;
+    margin-bottom: 2px;
+}
+
+#header_cart span{
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 8px;
+}

@@ -2,3 +2,21 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+:root{
+  --bradius: 6px;
+  --mainCol: #febd69;
+}
+
+body{
+  background-color: #131921;
+}
+
+input[type="text"]{
+  border: none;
+  outline: none;
+}
+
+button{
+  border: none;
+}
