@@ -4,12 +4,8 @@
 }
 
 :root{
-  --bradius: 6px;
+  --bradius: 5px;
   --mainCol: #febd69;
-}
-
-body{
-  background-color: #131921;
 }
 
 input[type="text"]{
@@ -19,4 +15,18 @@ input[type="text"]{
 
 button{
   border: none;
+}
+
+button:active{
+  opacity: 0.9;
+}
+
+
+::-webkit-scrollbar{
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgba(82, 82, 82, 0.7);
+  border-radius: 10px;
 }

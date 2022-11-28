@@ -1,5 +1,12 @@
+header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
 nav{
     align-items: center;
+    background-color: #131921;
     display: flex;
     justify-content: space-between;
     height: 60px;
@@ -86,6 +93,7 @@ nav form button:active{
 }
 
 #header_cart span{
+    color: white;
     font-size: 14px;
     font-weight: bold;
     position: absolute;

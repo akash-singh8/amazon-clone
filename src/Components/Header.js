@@ -4,6 +4,8 @@ import "../CSS/Header.css";
 import search from "../Images/search.svg";
 import cart from "../Images/cart.svg";
 
+import { Link } from "react-router-dom";
+
 function Header() {
   function handleSearch(e) {
     e.preventDefault();
@@ -13,11 +15,13 @@ function Header() {
   return (
     <header>
       <nav>
-        <img
-          src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
-          alt="amazon navigation icon"
-          style={{ paddingTop: "7px", height: "40px" }}
-        />
+        <Link to="/">
+          <img
+            src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
+            alt="amazon navigation icon"
+            style={{ cursor: "pointer", paddingTop: "7px", height: "40px" }}
+          />
+        </Link>
 
         <form onSubmit={handleSearch}>
           <input type="text" placeholder="" name="search" />
@@ -35,11 +39,13 @@ function Header() {
             <p className="nav_options1">Returns</p>
             <p className="nav_options2">& Orders</p>
           </div>
-          <div id="header_cart">
-            <p>0</p>
-            <img src={cart} alt="shopping cart" />
-            <span>Cart</span>
-          </div>
+          <Link to={"/cart"} style={{ textDecoration: "none" }}>
+            <div id="header_cart">
+              <p>0</p>
+              <img src={cart} alt="shopping cart" />
+              <span>Cart</span>
+            </div>
+          </Link>
         </div>
       </nav>
     </header>
