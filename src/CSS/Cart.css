@@ -1,0 +1,44 @@
+#cart{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 20px;
+    column-gap: 20px
+}
+
+#cart_products{
+    background-color: white;
+    padding: 10px 15px;
+    width: 80%;
+}
+
+
+#cart_order{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    justify-content: center;
+    width: 340px;
+    height: 165px;
+}
+
+#cart_order div{
+    font-size: 1.2em;
+}
+
+#cart_order label{
+    font-size: 0.9em;
+    margin: 8px 0 18px 4px;
+}
+
+#cart_order button{
+    background-color: var(--mainCol);
+    border-radius: var(--bradius);
+    cursor: pointer;
+    letter-spacing: 1px;
+    padding: 10px 0;
+}
+
+#cart_order button:hover{
+    background-color: rgb(247, 175, 43);
+}
