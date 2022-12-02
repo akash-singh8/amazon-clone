@@ -30,3 +30,17 @@ button:active{
   background-color: rgba(82, 82, 82, 0.7);
   border-radius: 10px;
 }
+
+footer{
+  background-color: #131921;
+  color: white;
+  font-family: monospace;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+footer a{
+  color: cyan;
+  text-decoration: none;
+}

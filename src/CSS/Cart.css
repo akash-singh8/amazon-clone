@@ -2,8 +2,10 @@
     display: flex;
     justify-content: space-between;
     padding: 25px 20px;
-    column-gap: 20px
+    column-gap: 20px;
+    min-height: calc(100vh - 148px);
 }
+
 
 #cart_products{
     background-color: white;
@@ -41,4 +43,20 @@
 
 #cart_order button:hover{
     background-color: rgb(247, 175, 43);
+}
+
+@media screen and (max-width: 800px) {
+    #cart{
+        flex-direction: column-reverse;
+        justify-content: start;
+        row-gap: 20px;
+    }
+
+    #cart_products{
+        width: 100%;
+    }
+
+    #cart_order{
+        width: 100%;
+    }
 }

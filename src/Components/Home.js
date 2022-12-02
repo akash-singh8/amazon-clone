@@ -3,7 +3,7 @@ import "../CSS/Home.css";
 
 import Product from "./Product";
 
-function Home() {
+function Home({ products, cartProducts, price }) {
   return (
     <section>
       <img
@@ -14,44 +14,43 @@ function Home() {
 
       <div className="product_row">
         <Product
-          title="Apple 2021 iPad Pro M1 chip (11-inch/27.96 cm, Wi-Fi, 128GB) - Space Grey"
-          price={899}
-          rating={4}
-          image="https://m.media-amazon.com/images/I/81Y5WuARqpS._SX679_.jpg"
+          id="productKey2"
+          product={products["productKey2"]}
+          cartProducts={cartProducts}
+          price={price}
         />
         <Product
-          title="ASUS ROG Strix G17, 17.3-inch (43.94 cms) FHD 144Hz, AMD Ryzen 7 4800H, RTX 3050 Ti 4GB Graphics, Gaming Laptop"
-          price={1099}
-          rating={4}
-          image="https://m.media-amazon.com/images/I/61bwqXfWiaL._SX466_.jpg"
-        />
-      </div>
-      <div className="product_row">
-        <Product
-          title="Do It Today: Overcome Procrastination, Improve Productivity"
-          price={2.49}
-          rating={4}
-          image="https://m.media-amazon.com/images/I/41W-o6xu2bL._SX323_BO1,204,203,200_.jpg"
-        />
-        <Product
-          title="The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life"
-          price={3.69}
-          rating={4}
-          image="https://m.media-amazon.com/images/I/511vJPN7p5L._SX331_BO1,204,203,200_.jpg"
-        />
-        <Product
-          title="Atomic Habits: The life-changing million copy bestseller"
-          price={10}
-          rating={5}
-          image="https://m.media-amazon.com/images/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg"
+          id="productKey1"
+          product={products["productKey1"]}
+          cartProducts={cartProducts}
+          price={price}
         />
       </div>
       <div className="product_row">
         <Product
-          title="Samsung LC49HG90DMUXEN 48.9-inch Ultra Wide Curved Monitor"
-          price={1599}
-          rating={4}
-          image="https://m.media-amazon.com/images/I/71MlcO29QOL._SX679_.jpg"
+          id="productKey3"
+          product={products["productKey3"]}
+          cartProducts={cartProducts}
+          price={price}
+        />
+        <Product
+          id="productKey4"
+          product={products["productKey4"]}
+          cartProducts={cartProducts}
+          price={price}
+        />
+        <Product
+          id="productKey5"
+          product={products["productKey5"]}
+          cartProducts={cartProducts}
+          price={price}
+        />
+      </div>
+      <div className="product_row">
+        <Product
+          id="productKey6"
+          product={products["productKey6"]}
+          price={price}
         />
       </div>
     </section>

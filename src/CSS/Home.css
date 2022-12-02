@@ -5,13 +5,28 @@ section{
 
 #home_poster{
     width: 100%;
-    margin-bottom: -290px;
+    margin-bottom: -20vw;
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2));
 }
 
 .product_row{
+    column-gap: 15px;
     display: flex;
     justify-content: space-around;
     position: relative;
+    margin: 0 15px;
     z-index: 1;
+}
+
+
+@media screen and (max-width: 450px) {
+    .product_row:nth-child(2){
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .product_row:nth-child(3){
+        flex-wrap: wrap;
+    }   
 }

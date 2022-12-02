@@ -99,3 +99,21 @@ nav form button:active{
     position: absolute;
     bottom: 8px;
 }
+
+
+@media screen and (max-width: 750px) {
+    nav form {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav{
+        padding: 5px 10px;
+    }
+
+    #nav_options{
+        font-size: 14px;
+        min-width: 220px;
+    }
+}
